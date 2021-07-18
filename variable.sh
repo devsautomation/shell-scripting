@@ -2,9 +2,10 @@
 
 a=10
 b=20
+DATE= 27/04/19
 echo $a
 echo {$b}
 
 #Substitution
-NO_OF_USERS= $(who | wc-l)
-echo $NO_OF_USERS
+
+echo todays date=$(DATE)
