@@ -7,3 +7,4 @@ echo {$b}
 
 #Substitution
 NO_OF_USERS= $(who | wc-l)
+echo $NO_OF_USERS
