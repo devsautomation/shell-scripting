@@ -12,6 +12,7 @@ test()
 
 #call func in Main Prog
 a=100
-test ABC
+test ABC #calling funct with arg in line 10
 echo value of b = ${b}
+#the below is only accessible while running from terminal and pass value ex-: bash 03-function.sh abc
 echo first argument in the min prog $1
