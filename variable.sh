@@ -8,4 +8,5 @@ echo {$b}
 
 #Substitution
 
-echo todays date=$(DATE)
+DATE=$(date +%f)
+echo todays date is $DATE
