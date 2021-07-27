@@ -23,7 +23,6 @@ status_check $?
 
 echo start Mongodb
 systemctl enable mongod &>>$LOG && systemctl start mongod &>>$LOG
-Update Liste IP address from 127.0.0.1 to 0.0.0.0 in config file
 status_check $?
 
 echo Download MongoDB schema
