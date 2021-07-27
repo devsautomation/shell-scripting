@@ -16,6 +16,7 @@ if [ $1 -eq 0 ];then
 echo done
 else
 echo  fail
+echo check the log file more details, Log File - $LOG
 exit 1
 fi
 }
