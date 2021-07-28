@@ -18,10 +18,13 @@ echo "Extract front end archieve AND MOVE TO DESIRED LOCATION"
 unzip /tmp/frontend.zip &>>$LOG &&mv frontend-main/* . &>>$LOG && mv static/* . &>>$LOG && rm -rf frontend-master static &>>$LOG
 status_check $?
 
-echo "update roboshop config"
+echo "copy roboshop config"
 mv localhost.conf /etc/nginx/default.d/roboshop.conf &>>$LOG
 status_check $?
 
+echo "update roboshop config"
+sed -i -e '/catlogue/ s/localhost/catlogue.roboshop.internal/' /etc/nginx/default.d/roboshop.conf
+status_check $?
 
 echo "Enabling nginx"
 systemctl enable nginx &>>$LOG
