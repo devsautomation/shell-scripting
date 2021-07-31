@@ -16,3 +16,20 @@ output "sample2" {
   value = var.sample2
 }
 
+
+
+variable "String" {
+  default = "Hello World"
+}
+
+variable "number" {
+  default = 100
+}
+
+variable "boolean" {
+  default = false
+}
+
+output "vars" {
+  value = "${var.String} -for string, ${var.number} -for number,${var.boolean} -for string"
+}
