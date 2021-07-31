@@ -33,3 +33,9 @@ variable "boolean" {
 output "vars" {
   value = "${var.String} -for string, ${var.number} -for number,${var.boolean} -for boolean"
 }
+
+variable "FRUITS" {}
+
+output "FRUITS" {
+  value = var.FRUITS
+}
