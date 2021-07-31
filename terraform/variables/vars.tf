@@ -7,7 +7,7 @@ output "sample" {
 }
 
 output "sample1" {
-  value = "{$var.sample} -From Terraform"
+  value = "${var.sample} -From Terraform"
 }
 
 variable "sample2" {}
