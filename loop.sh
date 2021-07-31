@@ -15,7 +15,7 @@ for fruit in apple banana orange kiwi ;do
    done
 
 #Case in Shell
-FRUIT="kiwi"
+FRUIT="Mango"
 case "$FRUIT" in
    "apple") echo "Apple pie is quite tasty."
    ;;
