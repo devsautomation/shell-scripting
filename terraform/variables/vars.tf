@@ -31,5 +31,5 @@ variable "boolean" {
 }
 
 output "vars" {
-  value = "${var.String} -for string, ${var.number} -for number,${var.boolean} -for string"
+  value = "${var.String} -for string, ${var.number} -for number,${var.boolean} -for boolean"
 }
